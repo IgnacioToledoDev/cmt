@@ -11,7 +11,7 @@ import { BookOpenIcon } from "@heroicons/react/24/solid";
 
 export const Experience = () => {
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-full lg:items-center lg:justify-center">
       <Title title="Formación" />
       <div className="w-[21rem] md:w-full md:items-center md:justify-center">
         <Timeline>

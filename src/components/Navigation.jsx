@@ -10,12 +10,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 function NavList() {
   return (
     <ul className="my-2 flex flex-col g-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-      <Typography
-        as="li"
-        variant="small"
-        color="black"
-        className="p-1 font-medium"
-      >
+      <Typography as="li" variant="small" className="p-1 font-medium">
         <a
           href="#"
           className="flex items-center hover:text-blue-500 transition-colors"
@@ -23,12 +18,7 @@ function NavList() {
           Experiencia
         </a>
       </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="black"
-        className="p-1 font-medium"
-      >
+      <Typography as="li" variant="small" className="p-1 font-medium">
         <a
           href="#"
           className="flex items-center hover:text-blue-500 transition-colors"
@@ -36,12 +26,7 @@ function NavList() {
           Agenda ahora
         </a>
       </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="black"
-        className="p-1 font-medium"
-      >
+      <Typography as="li" variant="small" className="p-1 font-medium">
         <a
           href="#"
           className="flex items-center hover:text-blue-500 transition-colors"
@@ -49,12 +34,7 @@ function NavList() {
           Comentarios
         </a>
       </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="black"
-        className="p-1 font-medium"
-      >
+      <Typography as="li" variant="small" className="p-1 font-medium">
         <a
           href="#"
           className="flex items-center hover:text-blue-500 transition-colors"
@@ -81,40 +61,40 @@ export const Navigation = () => {
   }, []);
 
   return (
-    <Navbar
-      className="mx-auto max-w-screen-xl px-6 py-2 inset-0 z-40 relative top-0"
-      fullWidth={true}
-      shadow={false}
-      color="transparent"
-    >
-      <div className="flex items-center justify-between text-black ">
-        <Typography
-          as="a"
-          href="#"
-          variant="h6"
-          className="mr-4 cursor-pointer py-1.5"
-        >
-          Camilo Vera
-        </Typography>
-        <div className="hidden lg:block">
-          <NavList />
+    <div className="flex absolute z-30 mx-auto max-w-screen overflow-hidden px-6 py-2 w-screen top-0">
+      <Navbar
+        className="mx-auto max-w-screen-xl px-6 py-2 inset-0 z-40 relative top-0"
+        color="transparent"
+      >
+        <div className="flex items-center justify-between text-white ">
+          <Typography
+            as="a"
+            href="#"
+            variant="h5"
+            className="mr-4 cursor-pointer py-1.5"
+          >
+            Camilo <span className="text-bold text-indigo-500">Vera</span>
+          </Typography>
+          <div className="hidden lg:block">
+            <NavList />
+          </div>
+          <IconButton
+            variant="text"
+            className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+            ripple={false}
+            onClick={() => setOpenNav(!openNav)}
+          >
+            {openNav ? (
+              <XMarkIcon className="h-6 w-6" strokeWidth={2} />
+            ) : (
+              <Bars3Icon className="h-6 w-6" strokeWidth={2} />
+            )}
+          </IconButton>
         </div>
-        <IconButton
-          variant="text"
-          className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
-          ripple={false}
-          onClick={() => setOpenNav(!openNav)}
-        >
-          {openNav ? (
-            <XMarkIcon className="h-6 w-6" strokeWidth={2} />
-          ) : (
-            <Bars3Icon className="h-6 w-6" strokeWidth={2} />
-          )}
-        </IconButton>
-      </div>
-      <Collapse open={openNav}>
-        <NavList />
-      </Collapse>
-    </Navbar>
+        <Collapse open={openNav}>
+          <NavList />
+        </Collapse>
+      </Navbar>
+    </div>
   );
 };

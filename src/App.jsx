@@ -7,7 +7,7 @@ import { Footer } from "./components/Footer";
 
 function App() {
   return (
-    <div className="overflow-auto">
+    <div className="overflow-hidden">
       <main>
         <Navigation />
         <div>
