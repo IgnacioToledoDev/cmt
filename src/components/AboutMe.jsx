@@ -10,8 +10,8 @@ import {
 /**TODO -> FIXED TEXT, DELETE TE P EXCEDED */
 export const AboutMe = () => {
   return (
-    <div className="w-full h-full items-center justify-center ">
-      <Card className="mt-6 w-full md:px-8">
+    <div className="w-auto h-full items-center justify-center ">
+      <Card className="mt-6 w-full md:px-8" shadow={false}>
         <CardBody>
           <Title title="Sobre mi" />
           <Typography>

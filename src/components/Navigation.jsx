@@ -82,7 +82,9 @@ export const Navigation = () => {
 
   return (
     <Navbar
-      className="mx-auto max-w-screen-xl px-6 py-2 inset-0 z-40 relative"
+      className="mx-auto max-w-screen-xl px-6 py-2 inset-0 z-40 relative top-0"
+      fullWidth={true}
+      shadow={false}
       color="transparent"
     >
       <div className="flex items-center justify-between text-black ">

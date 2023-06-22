@@ -8,8 +8,8 @@ import { Footer } from "./components/Footer";
 function App() {
   return (
     <div className="overflow-auto">
-      <Navigation />
       <main>
+        <Navigation />
         <div>
           <LandingHeader />
         </div>

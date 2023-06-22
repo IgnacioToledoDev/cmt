@@ -12,14 +12,17 @@ import {
 
 export const Contact = () => {
   return (
-    <div>
-      <Card className="flex mt-6 w-96 md:items-center md:justify-center md:w-screen md:border-2 md:border-gray-100 md:h-full">
+    <div className="relative z-30">
+      <Card
+        className="flex mt-6 w-96 md:items-center md:justify-center md:w-screen md:h-full"
+        shadow={false}
+      >
         <CardHeader>
           <Title title="Agenda ahora" />
-          <Typography className="p-2 text-center md:text-center">
+          <p className="p-2 text-center my-2 mx-2">
             Agenda cita conmigo escogiendo una fecha de mi agenda. Recibirás un
             mensaje de confirmación y un recordatorio antes de la cita.
-          </Typography>
+          </p>
         </CardHeader>
         <CardBody>
           <Card color="transparent" shadow={true}>
