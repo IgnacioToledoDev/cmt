@@ -2,12 +2,12 @@
 
 ## Installl dependencies
 
-´´´bash
+```bash
   npm install
-´´´
+```
 
 ## Run developer depedencies
 
-´´´bash
+```bash
   npm run dev
-´´´
+```
