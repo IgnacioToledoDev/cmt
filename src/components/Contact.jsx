@@ -1,4 +1,5 @@
 import Title from "./Title";
+import Wave from "../../public/wave.svg";
 import {
   Card,
   CardBody,
@@ -12,9 +13,9 @@ import {
 
 export const Contact = () => {
   return (
-    <div className="relative z-30">
+    <div className="relative z-30 pt-8 lg:p-auto">
       <Card
-        className="flex mt-6 w-96 md:items-center md:justify-center md:w-screen md:h-full"
+        className="flex mt-6 w-96 md:items-center md:justify-center md:w-screen md:h-full z-30 bg-transparent"
         shadow={false}
       >
         <CardHeader>
@@ -25,7 +26,7 @@ export const Contact = () => {
           </p>
         </CardHeader>
         <CardBody>
-          <Card color="transparent" shadow={true}>
+          <Card className="shadow-md rounded border-2">
             <form className="mb-2 w-80 max-w-screen-lg sm:w-96 p-3 flex flex-col items-center justify-center">
               <div className="mb-4 flex flex-col gap-6">
                 <Input size="lg" label="Nombre completo" color="gray" />
@@ -58,6 +59,9 @@ export const Contact = () => {
           </Card>
         </CardBody>
       </Card>
+      <div className=" absolute object-cover top-0 bottom-0 w-full h-full blur-[1px]">
+        <img src={Wave} alt="Fondo armonico" />
+      </div>
     </div>
   );
 };
