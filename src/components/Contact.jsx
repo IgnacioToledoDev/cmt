@@ -1,19 +1,21 @@
 import Title from "./Title";
 import Wave from "../../public/wave.svg";
+import PhoneInput from "react-phone-number-input";
+import "react-phone-number-input/style.css";
+import { useState } from "react";
 import {
   Card,
   CardBody,
   Typography,
   Button,
   CardHeader,
-  Input,
   Checkbox,
-  Textarea,
 } from "@material-tailwind/react";
 
 export const Contact = () => {
+  const [country, setCountry] = useState();
   return (
-    <div className="relative z-30 pt-8 lg:p-auto">
+    <div className="relative z-30 pt-8 lg:p-auto overflow-hidden" id="contact">
       <Card
         className="flex mt-6 w-96 md:items-center md:justify-center md:w-screen md:h-full z-30 bg-transparent"
         shadow={false}
@@ -25,41 +27,50 @@ export const Contact = () => {
             mensaje de confirmación y un recordatorio antes de la cita.
           </p>
         </CardHeader>
-        <CardBody>
-          <Card className="shadow-md rounded border-2">
-            <form className="mb-2 w-80 max-w-screen-lg sm:w-96 p-3 flex flex-col items-center justify-center">
-              <div className="mb-4 flex flex-col gap-6">
-                <Input size="lg" label="Nombre completo" color="gray" />
-                <Input size="lg" label="Correo electronico" color="gray" />
-                <Input
-                  type="number"
-                  size="lg"
-                  label="Numero de Contacto"
-                  color="gray"
+        <CardBody className="w-full items-center justify-center flex p-1 flex-col">
+          <div className="flex flex-row w-full pt-2">
+            <Card className="flex rounded w-full items-end justify-end">
+              <form className="mb-2 w-80 max-w-screen-lg sm:w-96 p-3 flex flex-col items-center justify-center border-2 rounded shadow-md">
+                <div className="mb-4 flex flex-col gap-3 [&>label]:text-md [&>label]:p-1 [&>input]:p-1 [&>input]:border-[2px] [&>input]:border-indigo-100 [&>input]:rounded">
+                  <label>Nombre completo:</label>
+                  <input placeholder="Example Example" type="text" />
+                  <label>Correo electronico:</label>
+                  <input placeholder="example@example.com" type="email" />
+                  <label>Numero telefonico:</label>
+                  <PhoneInput
+                    className="p-1 border-[2px] border-indigo-100 rounded"
+                    placeholder="56 9 9999 9999"
+                    value={country}
+                    onChange={setCountry}
+                  />
+                  <label>Nota adicional:</label>
+                  <textarea className="text-md p-1 border-[2px] border-indigo-100 rounded resize-none h-[120px] w-auto" />
+                </div>
+                <Checkbox
+                  label={
+                    <Typography
+                      variant="small"
+                      color="black"
+                      className="flex items-center font-normal"
+                    >
+                      Concentimiento de grabar session
+                    </Typography>
+                  }
+                  containerProps={{ className: "-ml-2.5" }}
+                  color="indigo"
                 />
-                <Textarea color="gray" label="Nota adicional" />
-              </div>
-              <Checkbox
-                label={
-                  <Typography
-                    variant="small"
-                    color="gray"
-                    className="flex items-center font-normal"
-                  >
-                    Concentimiento de grabar session
-                  </Typography>
-                }
-                containerProps={{ className: "-ml-2.5" }}
-                color="gray"
-              />
-              <Button className="mt-6" fullWidth color="gray">
-                Agendar ahora
-              </Button>
-            </form>
-          </Card>
+                <Button className="mt-6" fullWidth color="indigo">
+                  Agendar ahora
+                </Button>
+              </form>
+            </Card>
+            <div className="w-full h-full p-2 justify-center flex">
+              <h3 className="text-lg">Fechas disponibles</h3>
+            </div>
+          </div>
         </CardBody>
       </Card>
-      <div className=" absolute object-cover top-0 bottom-0 w-full h-full blur-[1px]">
+      <div className="absolute object-cover top-0 bottom-0 w-full h-full blur-[1px] hidden lg:block">
         <img src={Wave} alt="Fondo armonico" />
       </div>
     </div>
