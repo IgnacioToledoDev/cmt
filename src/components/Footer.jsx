@@ -49,7 +49,7 @@ export const Footer = () => {
       </div>
       <hr className="my-8 border-blue-gray-50" />
       <Typography color="blue-gray" className="text-center font-normal">
-        &copy; 2023 Camilo Vera
+        Camilo Vera &copy; 2023 - Psicologo y especialista en terapia de parejas
       </Typography>
     </footer>
   );

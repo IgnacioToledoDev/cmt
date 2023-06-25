@@ -9,9 +9,9 @@ export const LandingHeader = () => {
   return (
     <section className=" h-screen w-screen relative text-center overflow-hidden">
       <div className="flex items-center h-full justify-center">
-        <div className="z-30 relative h-full flex flex-col pt-24 animate-fade-up">
+        <div className="z-30 relative h-full w-full flex flex-col pt-24 animate-fade-up items-center justify-center">
           <header className="flex flex-col text-white text-[20px] md:text-[40px] ">
-            <div className="w-[15rem] md:w-full pb-4  hidden lg:block">
+            <div className="w-[18rem] md:w-full pb-4 inline-flex m-6 md:m-auto">
               <img
                 src={camiloVeraBg}
                 alt="Camilo Vera, especialista en terapia de parejas"
@@ -27,24 +27,28 @@ export const LandingHeader = () => {
               <img
                 src={instagram}
                 alt="Logo de Instagram"
-                className="cursor-pointer w-[32px] lg:w-auto"
+                className="cursor-pointer w-[38px] lg:w-auto m-4"
               />
               <img
                 src={facebook}
                 alt="Logo de Facebook"
-                className="cursor-pointer w-[32px] lg:w-auto"
+                className="cursor-pointer w-[38px] lg:w-auto m-4"
               />
               <img
                 src={whattsap}
                 alt="Logo de Whattsap"
-                className="cursor-pointer w-[32px] lg:w-auto"
+                className="cursor-pointer w-[38px] lg:w-auto m-4  "
               />
             </div>
           </footer>
         </div>
       </div>
       <div className=" absolute object-cover object-center top-0 bottom-0 w-full h-full blur-[1px] ">
-        <img src={background_check} alt="Fondo armonico" />
+        <img
+          src={background_check}
+          alt="Fondo armonico"
+          className="object-center h-full w-full object-cover"
+        />
       </div>
     </section>
   );

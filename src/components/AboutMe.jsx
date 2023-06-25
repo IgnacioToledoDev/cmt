@@ -10,7 +10,10 @@ import {
 /**TODO -> FIXED TEXT, DELETE TE P EXCEDED */
 export const AboutMe = () => {
   return (
-    <div className="block lg:flex w-auto h-full lg:items-center lg:justify-center">
+    <div
+      className="block lg:flex w-auto h-full lg:items-center lg:justify-center"
+      id="experience"
+    >
       <Card className="mt-6 w-full lg:w-[85%] md:px-8" shadow={false}>
         <CardBody>
           <Title title="Sobre mi" />
