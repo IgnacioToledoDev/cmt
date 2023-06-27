@@ -15,7 +15,7 @@ import {
 export const Contact = () => {
   const [country, setCountry] = useState();
   return (
-    <div className="relative z-30 pt-8 lg:p-auto overflow-hidden" id="contact">
+    <div className="relative z-30 pt-8 lg:p-auto" id="contact">
       <Card
         className="flex mt-6 w-96 md:items-center md:justify-center md:w-screen md:h-full z-30 bg-transparent"
         shadow={false}
@@ -29,7 +29,7 @@ export const Contact = () => {
         </CardHeader>
         <CardBody className="w-full items-center justify-center flex p-1 flex-col">
           <div className="flex flex-row w-full pt-2">
-            <Card className="flex rounded w-full items-end justify-end">
+            <Card className="flex rounded w-full items-center justify-center">
               <form className="mb-2 w-80 max-w-screen-lg sm:w-96 p-3 flex flex-col items-center justify-center border-2 rounded shadow-md">
                 <div className="mb-4 flex flex-col gap-3 [&>label]:text-md [&>label]:p-1 [&>input]:p-1 [&>input]:border-[2px] [&>input]:border-indigo-100 [&>input]:rounded">
                   <label>Nombre completo:</label>
@@ -64,9 +64,9 @@ export const Contact = () => {
                 </Button>
               </form>
             </Card>
-            <div className="w-full h-full p-2 justify-center flex">
+            {/* <div className="w-full h-full p-2 justify-center flex">
               <h3 className="text-lg">Fechas disponibles</h3>
-            </div>
+            </div> */}
           </div>
         </CardBody>
       </Card>
