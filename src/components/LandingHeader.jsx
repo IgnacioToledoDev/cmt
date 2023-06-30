@@ -11,7 +11,7 @@ export const LandingHeader = () => {
       <div className="flex items-center h-full justify-center">
         <div className="z-30 relative h-full w-full flex flex-col pt-24 animate-fade-up items-center justify-center">
           <header className="flex flex-col text-white text-[20px] md:text-[40px] ">
-            <div className="w-[18rem] md:w-full pb-4 inline-flex m-6 md:m-auto">
+            <div className="w-[18rem] md:w-full pb-4 inline-flex m-6 md:m-auto md:items-center md:justify-center">
               <img
                 src={camiloVeraBg}
                 alt="Camilo Vera, especialista en terapia de parejas"
