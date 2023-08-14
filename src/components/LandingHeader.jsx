@@ -7,11 +7,11 @@ import whattsap from "../assets/icons/whattsap.svg";
 
 export const LandingHeader = () => {
   return (
-    <section className=" h-screen w-screen relative text-center overflow-hidden">
+    <section className=" h-screen w-screen relative text-center">
       <div className="flex items-center h-full justify-center">
         <div className="z-30 relative h-full w-full flex flex-col pt-24 animate-fade-up items-center justify-center">
           <header className="flex flex-col text-white text-[20px] md:text-[40px] ">
-            <div className="w-[18rem] md:w-full pb-4 inline-flex m-6 md:m-auto">
+            <div className="w-[18rem] md:w-full pb-4 inline-flex m-6 md:m-auto md:items-center md:justify-center">
               <img
                 src={camiloVeraBg}
                 alt="Camilo Vera, especialista en terapia de parejas"
@@ -43,7 +43,7 @@ export const LandingHeader = () => {
           </footer>
         </div>
       </div>
-      <div className=" absolute object-cover object-center top-0 bottom-0 w-full h-full blur-[1px] ">
+      <div className="absolute object-cover object-center top-0 correbottom-0 w-full h-full blur-[1px]">
         <img
           src={background_check}
           alt="Fondo armonico"

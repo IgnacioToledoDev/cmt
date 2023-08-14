@@ -28,7 +28,7 @@ function NavList() {
       </Typography>
       <Typography as="li" variant="small" className="p-1 font-medium">
         <a
-          href="#reference"
+          href="#comments"
           className="flex items-center hover:text-blue-500 transition-colors"
         >
           Comentarios
