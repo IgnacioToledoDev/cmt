@@ -4,6 +4,7 @@ import { LandingHeader } from "./components/LandingHeader";
 import { Navigation } from "./components/Navigation";
 import { Services } from "./components/Services";
 import { Footer } from "./components/Footer";
+import { Comments } from "./pages/comments";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         </article>
         <article className="p-0 m-0">
           <Contact />
+          <Comments />
         </article>
       </main>
       <Footer />
