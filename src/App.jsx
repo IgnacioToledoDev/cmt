@@ -7,8 +7,8 @@ import { Footer } from "./components/Footer";
 
 function App() {
   return (
-    <div className="overflow-hidden">
-      <main>
+    <div className="overflow-hidden p-0 m-0">
+      <main className="m-0 p-0">
         <Navigation />
         <div>
           <LandingHeader />
@@ -17,7 +17,7 @@ function App() {
           <AboutMe />
           <Services />
         </article>
-        <article className="flex w-full h-full">
+        <article className="p-0 m-0">
           <Contact />
         </article>
       </main>

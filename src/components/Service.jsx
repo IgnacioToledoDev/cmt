@@ -9,7 +9,7 @@ import {
 export const Service = () => {
   return (
     <div className="p-1 m-2">
-      <Card className="w-full max-w-[48rem] flex-row p-8">
+      <Card className="w-full max-w-[42rem] flex-row p-8">
         <CardHeader
           shadow={true}
           floated={false}
@@ -25,8 +25,8 @@ export const Service = () => {
           <Typography variant="h6" color="gray" className="mb-4 uppercase">
             Terapia
           </Typography>
-          <Typography variant="h4" color="blue-gray" className="mb-2">
-            Primera visita Psicologia
+          <Typography variant="h5" color="blue-gray" className="mb-3">
+            Psicoterapia en adolescentes y adultos
           </Typography>
           <Typography color="gray" className="mb-8 font-normal">
             Like so many organizations these days, Autodesk is a company in

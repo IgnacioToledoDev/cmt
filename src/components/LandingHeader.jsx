@@ -7,7 +7,7 @@ import whattsap from "../assets/icons/whattsap.svg";
 
 export const LandingHeader = () => {
   return (
-    <section className=" h-screen w-screen relative text-center overflow-hidden">
+    <section className=" h-screen w-screen relative text-center">
       <div className="flex items-center h-full justify-center">
         <div className="z-30 relative h-full w-full flex flex-col pt-24 animate-fade-up items-center justify-center">
           <header className="flex flex-col text-white text-[20px] md:text-[40px] ">
