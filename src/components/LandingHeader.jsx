@@ -43,7 +43,7 @@ export const LandingHeader = () => {
           </footer>
         </div>
       </div>
-      <div className=" absolute object-cover object-center top-0 bottom-0 w-full h-full blur-[1px] ">
+      <div className="absolute object-cover object-center top-0 correbottom-0 w-full h-full blur-[1px]">
         <img
           src={background_check}
           alt="Fondo armonico"

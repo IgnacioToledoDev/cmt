@@ -27,10 +27,10 @@ export const Contact = () => {
             mensaje de confirmación y un recordatorio antes de la cita.
           </p>
         </CardHeader>
-        <CardBody className="w-full items-center justify-center flex p-1 flex-col">
-          <div className="flex flex-row w-full pt-2">
-            <Card className="flex rounded w-full items-center justify-center">
-              <form className="mb-2 w-80 max-w-screen-lg sm:w-96 p-3 flex flex-col items-center justify-center border-2 rounded shadow-md">
+        <CardBody className="relative w-full items-center justify-center flex p-1 flex-col">
+          <div className="flex flex-row w-full pt-2 items-center justify-center">
+            <Card className="flex rounded w-auto ">
+              <form className="relative mb-2 w-80 max-w-screen-lg sm:w-96 p-3 flex flex-col border-2 rounded">
                 <div className="mb-4 flex flex-col gap-3 [&>label]:text-md [&>label]:p-1 [&>input]:p-1 [&>input]:border-[2px] [&>input]:border-indigo-100 [&>input]:rounded">
                   <label>Nombre completo:</label>
                   <input placeholder="Example Example" type="text" />
@@ -49,7 +49,7 @@ export const Contact = () => {
                 <Checkbox
                   label={
                     <Typography
-                      variant="small"
+                      variant="md"
                       color="black"
                       className="flex items-center font-normal"
                     >

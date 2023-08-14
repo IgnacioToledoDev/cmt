@@ -1,22 +1,48 @@
-import psychotherapy from "../assets/icons/psychotherapy.png";
+import {
+  Card,
+  CardHeader,
+  CardBody,
+  Typography,
+} from "@material-tailwind/react";
 
 // eslint-disable-next-line react/prop-types
-export const Service = ({ name, price }) => {
+export const Service = () => {
   return (
-    <div className="rounded-md p-5 m-5 bg-gradient-to-br from-sky-300 via-sky-500 to-sky-600 bg-opacity-90 inline-block">
-      <div className="flex flew-col">
-        <div className="inline-block flex-row m-1">
-          <img src={psychotherapy} alt="Imagen de psicoterapia" />
-        </div>
-        <div>
-          <h1 className="text-xl">{name || "None name"}</h1>
-          <div>
-            <p>
-              Precio: <span>$</span> {price} por cada session
-            </p>
-          </div>
-        </div>
-      </div>
+    <div className="p-1 m-2">
+      <Card className="w-full max-w-[48rem] flex-row p-8">
+        <CardHeader
+          shadow={true}
+          floated={false}
+          className="m-0 w-2/5 shrink-0 rounded-r-none hidden lg:block"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80"
+            alt="card-image"
+            className="h-full w-full object-cover"
+          />
+        </CardHeader>
+        <CardBody>
+          <Typography variant="h6" color="gray" className="mb-4 uppercase">
+            startups
+          </Typography>
+          <Typography variant="h4" color="blue-gray" className="mb-2">
+            hi
+          </Typography>
+          <Typography color="gray" className="mb-8 font-normal">
+            Like so many organizations these days, Autodesk is a company in
+            transition. It was until recently a traditional boxed software
+            company selling licenses. Yet its own business model disruption is
+            only part of the story
+          </Typography>
+          <Typography
+            className="block w-full lg:inline-block text-blue-600 text-lg font-semibold"
+            variant="text"
+            size="lg"
+          >
+            Precio: $10000 por cada sesion
+          </Typography>
+        </CardBody>
+      </Card>
     </div>
   );
 };

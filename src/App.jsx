@@ -7,13 +7,13 @@ import { Footer } from "./components/Footer";
 
 function App() {
   return (
-    <div className="overflow-auto">
+    <div className="overflow-hidden">
       <main>
         <Navigation />
         <div>
           <LandingHeader />
         </div>
-        <article className="w-full h-full py-2 px-2">
+        <article className="relative w-full h-full py-2 px-2">
           <AboutMe />
           <Services />
         </article>
