@@ -23,10 +23,10 @@ export const Service = () => {
         </CardHeader>
         <CardBody>
           <Typography variant="h6" color="gray" className="mb-4 uppercase">
-            startups
+            Terapia
           </Typography>
           <Typography variant="h4" color="blue-gray" className="mb-2">
-            hi
+            Primera visita Psicologia
           </Typography>
           <Typography color="gray" className="mb-8 font-normal">
             Like so many organizations these days, Autodesk is a company in
