@@ -1,6 +1,6 @@
 import { Experience } from "./Experience";
 import camiloVeraBg from "../assets/CamiloVeraBg.png";
-import Title from "./Title";
+import Title from "../components/Title";
 import {
   Card,
   CardBody,
@@ -26,9 +26,9 @@ export const AboutMe = () => {
                 alt="Camilo Vera, especialista en terapia de parejas"
               />
             </div>
-            <div className="w-full m-12">
+            <div className="w-full lg:m-12">
               <Typography variant="lead" color="black">
-                <p>
+                <p className="lg:p-6 lg:m-2 xl:text-xl text-base">
                   Soy especialista en Terapia de Pareja / Terapia de Parejas.{" "}
                   <br />
                   La creatividad y la colaboración son claves para resolver lo
@@ -45,7 +45,7 @@ export const AboutMe = () => {
                   al alcance de todas las personas. ¿Te animas a descubrir tus
                   posibilidades?
                 </p>
-                <CardFooter className="m-0 text-center underline">
+                <CardFooter className="m-0 text-center underline text-base xl:text-xl">
                   Nos vemos en consulta.
                 </CardFooter>
               </Typography>

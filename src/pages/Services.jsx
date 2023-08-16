@@ -1,5 +1,5 @@
 import { Service } from "./Service";
-import Title from "./Title";
+import Title from "../components/Title";
 
 export const Services = () => {
   return (

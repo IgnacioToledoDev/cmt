@@ -8,8 +8,8 @@ import {
 // eslint-disable-next-line react/prop-types
 export const Service = () => {
   return (
-    <div className="p-1 m-2">
-      <Card className="w-full max-w-[42rem] flex-row p-8">
+    <div className="p-4 lg:m-2">
+      <Card className="w-full max-w-xl lg:max-w-[42rem] flex-row p-12">
         <CardHeader
           shadow={true}
           floated={false}

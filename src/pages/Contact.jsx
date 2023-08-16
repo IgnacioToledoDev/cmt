@@ -1,4 +1,4 @@
-import Title from "./Title";
+import Title from "../components/Title";
 import Wave from "../../public/wave.svg";
 import PhoneInput from "react-phone-number-input";
 import "react-phone-number-input/style.css";
