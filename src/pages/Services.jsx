@@ -3,7 +3,7 @@ import Title from "../components/Title";
 
 export const Services = () => {
   return (
-    <div className="">
+    <div className="p-0 m-0">
       <Title title="Mis Servicios" />
       <div className="items-center justify-center flex flex-wrap p-4">
         <Service name="Primera visita Psicologia" price="30000" />

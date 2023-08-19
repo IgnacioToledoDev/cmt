@@ -1,4 +1,3 @@
-import { Experience } from "./Experience";
 import camiloVeraBg from "../assets/CamiloVeraBg.png";
 import Title from "../components/Title";
 import {
@@ -51,7 +50,6 @@ export const AboutMe = () => {
               </Typography>
             </div>
           </div>
-          <Experience />
         </CardBody>
       </Card>
     </div>
