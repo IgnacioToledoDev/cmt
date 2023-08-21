@@ -17,17 +17,17 @@ export const AboutMe = () => {
       <Card className="mt-6 w-full lg:w-[85%] md:px-8" shadow={false}>
         <CardBody>
           <Title title="Sobre mi" />
-          <div className="flex">
-            <div className="w-full m-10 md:m-auto md:items-center md:justify-center hidden lg:inline-flex items-center justify-center">
+          <div className="flex m-1 p-0 w-full h-auto">
+            <div className="w-full m-10 md:m-auto hidden lg:inline-flex items-center justify-center">
               <img
                 src={camiloVeraBg}
                 className="pb-24"
                 alt="Camilo Vera, especialista en terapia de parejas"
               />
             </div>
-            <div className="w-full lg:m-12">
+            <div className="w-full m-0 p-0 lg:m-12">
               <Typography variant="lead" color="black">
-                <p className="lg:p-6 lg:m-2 xl:text-xl text-base">
+                <p className="lg:p-1 lg:m-0 xl:text-xl text-base w-full">
                   Soy especialista en Terapia de Pareja / Terapia de Parejas.{" "}
                   <br />
                   La creatividad y la colaboración son claves para resolver lo
@@ -44,7 +44,7 @@ export const AboutMe = () => {
                   al alcance de todas las personas. ¿Te animas a descubrir tus
                   posibilidades?
                 </p>
-                <CardFooter className="m-0 text-center underline text-base xl:text-xl">
+                <CardFooter className="m-0 text-center text-base xl:text-xl">
                   Nos vemos en consulta.
                 </CardFooter>
               </Typography>

@@ -14,7 +14,7 @@ function App() {
         <div>
           <LandingHeader />
         </div>
-        <article className="relative w-full h-full py-2 px-2">
+        <article className="relative">
           <AboutMe />
           <Services />
         </article>
