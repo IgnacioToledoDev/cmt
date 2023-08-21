@@ -1,8 +1,8 @@
-import { Contact } from "./components/Contact";
-import { AboutMe } from "./components/AboutMe";
-import { LandingHeader } from "./components/LandingHeader";
+import { Contact } from "./pages/Contact";
+import { AboutMe } from "./pages/AboutMe";
+import { LandingHeader } from "./pages/LandingHeader";
 import { Navigation } from "./components/Navigation";
-import { Services } from "./components/Services";
+import { Services } from "./pages/Services";
 import { Footer } from "./components/Footer";
 import { Comments } from "./pages/comments";
 
@@ -14,7 +14,7 @@ function App() {
         <div>
           <LandingHeader />
         </div>
-        <article className="relative w-full h-full py-2 px-2">
+        <article className="relative">
           <AboutMe />
           <Services />
         </article>
