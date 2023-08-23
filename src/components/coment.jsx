@@ -24,7 +24,7 @@ function StarIcon() {
 
 export function TestimonialCard() {
   return (
-    <div className="p-8 m-2">
+    <div className="lg:p-2 lg:m-2 border rounded-sm shadow-sm">
       <Card color="transparent" shadow={false} className="max-w-[26rem] p-4">
         <CardHeader
           color="transparent"
