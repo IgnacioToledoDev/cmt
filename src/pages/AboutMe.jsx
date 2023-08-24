@@ -1,57 +1,49 @@
-import camiloVeraBg from "../assets/CamiloVeraBg.png";
-import Title from "../components/Title";
-import {
-  Card,
-  CardBody,
-  CardFooter,
-  Typography,
-} from "@material-tailwind/react";
-
 /**TODO -> FIXED TEXT, DELETE TE P EXCEDED */
 export const AboutMe = () => {
   return (
     <div
-      className="block lg:flex w-auto h-full lg:items-center lg:justify-center"
+      className="block lg:flex w-auto h-auto max-w-[1140px] p-10 justify-center items-center m-auto"
       id="experience"
     >
-      <Card className="mt-6 w-full lg:w-[85%] md:px-8" shadow={false}>
-        <CardBody>
-          <Title title="Sobre mi" />
-          <div className="flex m-1 p-0 w-full h-auto">
-            <div className="w-full m-10 md:m-auto hidden lg:inline-flex items-center justify-center">
-              <img
-                src={camiloVeraBg}
-                className="pb-24"
-                alt="Camilo Vera, especialista en terapia de parejas"
-              />
-            </div>
-            <div className="w-full m-0 p-0 lg:m-12">
-              <Typography variant="lead" color="black">
-                <p className="lg:p-1 lg:m-0 xl:text-xl text-base w-full">
-                  Soy especialista en Terapia de Pareja / Terapia de Parejas.{" "}
-                  <br />
-                  La creatividad y la colaboración son claves para resolver lo
-                  difícil de la vida. Por grave que parezca tu situación,
-                  colaboraré con la mejor versión de ti mismo(a) para que
-                  busquemos oportunidades para que las cosas comiencen a ser
-                  diferentes y vuelvan a tener sentido.
-                  <br />
-                  Antes de que tomes la decisión de contratar mis servicios, me
-                  encantaría que te hicieras la siguiente pregunta: ¿Cómo te
-                  darías cuenta de que una conversación conmigo ha sido exitosa?
-                  ¿Qué sería lo primero que notarías distinto? Pareciera que el
-                  cambios se da en los pequeños detalles de la vida cotidiana,
-                  al alcance de todas las personas. ¿Te animas a descubrir tus
-                  posibilidades?
-                </p>
-                <CardFooter className="m-0 text-center text-base xl:text-xl">
-                  Nos vemos en consulta.
-                </CardFooter>
-              </Typography>
-            </div>
+      <div className=" flex flex-col flex-nowrap justify-center mx-auto">
+        <header>
+          <h3 className="text-black font-bold text-[31px] uppercase">
+            hola, soy camilo vera
+          </h3>
+        </header>
+        <footer>
+          <div className="text-[17px] text-[#444]">
+            <p className="py-3">
+              I’m the founder of Forte Labs, and the question that drives me is,
+              “
+              <span className="text-black font-bold">
+                How can humans reach their creative potential?
+              </span>
+              ”
+            </p>{" "}
+            <p className="py-3">
+              To answer that question, I teach and write about new ways for you
+              to thrive in our connected, digital world.
+            </p>
+            <p className="py-3">
+              Over the last decade,{" "}
+              <span className="text-black font-bold">
+                {" "}
+                I’ve helped thousands of people build a Second Brain.
+              </span>
+            </p>
+            <p className="py-3">
+              It’s a trusted place outside your head where you can collect and
+              organize your most important ideas and insights, and use them to
+              do your best work.
+            </p>
+            <p className="py-3">
+              The ultimate goal of building a Second Brain is to help you lead a
+              more fulfilling life with more ease and less stress.
+            </p>
           </div>
-        </CardBody>
-      </Card>
+        </footer>
+      </div>
     </div>
   );
 };

@@ -11,7 +11,7 @@ function StarIcon() {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
       fill="currentColor"
-      className="h-5 w-5 text-yellow-700"
+      className="h-6 w-6 text-yellow-700"
     >
       <path
         fillRule="evenodd"
@@ -37,7 +37,7 @@ export function TestimonialCard() {
               <Typography variant="h5" color="blue-gray">
                 Tania Andrew
               </Typography>
-              <div className="5 flex items-center gap-0">
+              <div className="flex items-center gap-1">
                 <StarIcon />
                 <StarIcon />
                 <StarIcon />
