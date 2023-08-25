@@ -7,6 +7,7 @@ import {
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import camiloVeraLogo from "../../public/logo.png";
+import { Link } from "react-router-dom";
 
 function NavList() {
   return (
@@ -14,7 +15,7 @@ function NavList() {
       <Typography as="li" variant="small" className="p-1 font-medium">
         <a
           href="#experience"
-          className="flex items-center hover:text-blue-500 transition-colors "
+          className="flex items-center hover:text-[#f33a10] transition-colors "
         >
           Experiencia
         </a>
@@ -23,7 +24,7 @@ function NavList() {
       <Typography as="li" variant="small" className="p-1 font-medium">
         <a
           href="#comments"
-          className="flex items-center hover:text-blue-500 transition-colors"
+          className="flex items-center hover:text-[#f33a10] transition-colors"
         >
           Comentarios
         </a>
@@ -31,7 +32,7 @@ function NavList() {
       <Typography as="li" variant="small" className="p-1 font-medium">
         <a
           href="#blog"
-          className="flex items-center hover:text-blue-500 transition-colors"
+          className="flex items-center hover:text-[#f33a10] transition-colors"
         >
           Blog
         </a>
@@ -39,7 +40,7 @@ function NavList() {
       <Typography as="li" variant="small" className="p-1 font-medium">
         <a
           href="#contact"
-          className=" items-center hover:text-blue-500 transition-colors bg-[#f33a10] text-white px-4 py-2 rounded-md"
+          className=" items-center hover:text-black transition-colors bg-[#f33a10] text-white px-4 py-2 rounded-md"
         >
           Agenda ahora
         </a>
@@ -68,8 +69,14 @@ export const Navigation = () => {
         className="mx-auto max-w-screen-xl px-6 py-2 inset-0 z-40 relative top-0"
         color="transparent"
       >
-        <div className="flex items-center justify-between">
-          <img src={camiloVeraLogo} alt="" className="lg:w-[128px] w-[64px]" />
+        <div className="flex items-center justify-between ">
+          <Link to="/">
+            <img
+              src={camiloVeraLogo}
+              alt=""
+              className="lg:w-[128px] w-[64px] cursor-pointer"
+            />
+          </Link>
           <div className="hidden lg:block">
             <NavList />
           </div>
