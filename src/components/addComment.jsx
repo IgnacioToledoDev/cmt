@@ -3,6 +3,8 @@ import { addDoc, collection } from "firebase/firestore";
 import { firestore } from "../config/firebaseConfig";
 import { useRef, useState } from "react";
 import { Loading } from "./Loading";
+import { formValidator } from "../utils/formValidator";
+import { AlertSucces, AlertFail } from "./Alert";
 
 const handleComment = async (testdata) => {
   const docRef = await addDoc(collection(firestore, "Comments"), testdata);
@@ -15,17 +17,28 @@ export const AddComment = () => {
   const commentRef = useRef();
   const authorRef = useRef();
 
-  const submitHandler = (e) => {
+  const submitHandler = async (e) => {
     setIsLoading(true);
     e.preventDefault();
     const comment = {
-      author: authorRef.current.value,
+      author: authorRef.current.value ? authorRef.current.value : "Anonimo",
       comment: commentRef.current.value,
       rating: rated,
       createdAt: new Date(),
       updateAt: new Date(),
     };
-    handleComment(comment).finally(() => setIsLoading(false));
+    const isValid = formValidator(comment);
+    console.log(isValid);
+    if (!isValid) {
+      setIsLoading(false);
+      return (
+        <AlertFail message="Error durante el proceso. Intentalo mas tarde." />
+      );
+    }
+    await handleComment(comment).finally(() => {
+      <AlertSucces />;
+      setIsLoading(false);
+    });
     commentRef.current.value = "";
     authorRef.current.value = "";
   };
@@ -66,7 +79,7 @@ export const AddComment = () => {
         {isLoading ? (
           <Loading />
         ) : (
-          <Button className="mt-6" color="indigo" type="submit">
+          <Button className="mt-6 bg-[#f33a10]" type="submit">
             Postear comentario
           </Button>
         )}

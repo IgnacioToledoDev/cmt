@@ -1,5 +1,4 @@
 import Title from "../components/Title";
-import Wave from "../../public/wave.svg";
 import PhoneInput from "react-phone-number-input";
 import "react-phone-number-input/style.css";
 import { useState } from "react";
@@ -62,7 +61,7 @@ export const Contact = () => {
                   containerProps={{ className: "-ml-2.5" }}
                   color="indigo"
                 />
-                <Button className="mt-6" fullWidth color="indigo">
+                <Button className="mt-6 bg-[#f33a10]" fullWidth>
                   Agendar ahora
                 </Button>
               </form>
@@ -73,9 +72,6 @@ export const Contact = () => {
           </div>
         </CardBody>
       </Card>
-      <div className="absolute object-cover top-0 bottom-0 w-full h-full blur-[1px] hidden lg:block">
-        <img src={Wave} alt="Fondo armonico" />
-      </div>
     </div>
   );
 };
