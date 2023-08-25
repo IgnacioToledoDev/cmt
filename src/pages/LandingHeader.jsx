@@ -3,7 +3,7 @@ import { Button } from "@material-tailwind/react";
 
 export const LandingHeader = () => {
   return (
-    <section className=" h-screen w-full relative text-center bg-[#f5f5f5]">
+    <section className=" h-screen w-full relative text-center bg-[#f5f5f5] p-6 animate-fade-up">
       <div className="flex items-center h-full justify-center">
         <div className="z-30 relative h-full w-full flex flex-col pt-24 animate-fade-up items-center justify-center">
           <header className="flex text-[20px] md:text-[40px] ">
@@ -28,10 +28,6 @@ export const LandingHeader = () => {
                   className="items-end justify-end"
                 />
               </div>
-              {/* <h2 className="font-bold uppercase lg:text-4xl">Camilo Vera</h2>
-              <p className="lg:text-[28px]">
-                Psicologo y especialista en terapia de parejas
-              </p> */}
             </div>
           </header>
         </div>
