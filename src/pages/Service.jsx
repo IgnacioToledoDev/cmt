@@ -6,9 +6,9 @@ import {
 } from "@material-tailwind/react";
 
 // eslint-disable-next-line react/prop-types
-export const Service = () => {
+export const Service = ({ name, price }) => {
   return (
-    <div className="p-2 lg:m-1 xl:m-4 xl:p-4">
+    <div className="p-1 lg:m-1 xl:m-2 xl:p-2">
       <Card className="w-full max-w-xl lg:max-w-[42rem] flex-row p-12">
         <CardHeader
           shadow={true}
@@ -25,8 +25,12 @@ export const Service = () => {
           <Typography variant="h6" color="gray" className="mb-4 uppercase">
             Terapia
           </Typography>
-          <Typography variant="h5" color="blue-gray" className="mb-3">
-            Psicoterapia en adolescentes y adultos
+          <Typography
+            variant="h4"
+            color="blue-gray"
+            className="mb-3 capitalize font-semibold"
+          >
+            {name}
           </Typography>
           <Typography color="gray" className="mb-8 font-normal">
             Like so many organizations these days, Autodesk is a company in
@@ -35,11 +39,11 @@ export const Service = () => {
             only part of the story
           </Typography>
           <Typography
-            className="block w-full lg:inline-block text-blue-600 text-lg font-semibold"
-            variant="text"
+            className="block w-full lg:inline-block text-lg font-semibold"
+            variant="lead"
             size="lg"
           >
-            Precio: $10000 por cada sesion
+            Precio: ${price}
           </Typography>
         </CardBody>
       </Card>
