@@ -8,23 +8,25 @@ import { Comments } from "./pages/comments";
 
 function App() {
   return (
-    <div className="overflow-hidden p-0 m-0">
-      <main className="m-0 p-0">
-        <Navigation />
-        <div>
-          <LandingHeader />
-        </div>
-        <article className="relative">
-          <AboutMe />
-          <Services />
-        </article>
-        <article className="p-0 m-0">
-          <Contact />
-          <Comments />
-        </article>
-      </main>
-      <Footer />
-    </div>
+    <>
+      <div className="overflow-hidden p-0 m-0">
+        <main className="m-0 p-0">
+          <Navigation />
+          <div>
+            <LandingHeader />
+          </div>
+          <article className="relative">
+            <AboutMe />
+            <Services />
+          </article>
+          <article className="p-0 m-0">
+            <Contact />
+            <Comments />
+          </article>
+        </main>
+        <Footer />
+      </div>
+    </>
   );
 }
 

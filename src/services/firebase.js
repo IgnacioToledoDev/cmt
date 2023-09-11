@@ -12,3 +12,16 @@ export const getComments = async () => {
 
   return comments; // Retornamos directamente el arreglo de comentarios
 };
+
+
+export const getQuestions = async () => {
+  const q = query(collection(firestore, "Questions"));
+
+  const querySnapshot = await getDocs(q);
+  const questions = [];
+  querySnapshot.forEach((doc) => {
+    questions.push(doc.data());
+  });
+
+  return questions; // Retornamos directamente el arreglo de preguntas
+}

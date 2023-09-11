@@ -4,10 +4,9 @@ import { firestore } from "../config/firebaseConfig";
 import { useRef, useState } from "react";
 import { Loading } from "./Loading";
 import { formValidator } from "../utils/formValidator";
-import { AlertSucces, AlertFail } from "./Alert";
 
-const handleComment = async (testdata) => {
-  const docRef = await addDoc(collection(firestore, "Comments"), testdata);
+const handleComment = async (comment) => {
+  const docRef = await addDoc(collection(firestore, "Comments"), comment);
   return docRef;
 };
 
@@ -31,12 +30,8 @@ export const AddComment = () => {
     console.log(isValid);
     if (!isValid) {
       setIsLoading(false);
-      return (
-        <AlertFail message="Error durante el proceso. Intentalo mas tarde." />
-      );
     }
     await handleComment(comment).finally(() => {
-      <AlertSucces />;
       setIsLoading(false);
     });
     commentRef.current.value = "";
@@ -49,7 +44,7 @@ export const AddComment = () => {
         <div className="flex flex-col flex-wrap flex-2 w-full">
           <div className="flex w-full m-1  py-2">
             <p className="text-lg p-1 text-gray-400">Valora mi servicio</p>
-            <Rating value={0} onChange={(value) => setRated(value)} />
+            <Rating value={0} onChange={(value) => setRated(value)} required />
           </div>
           <div className="flex py-2 px-4 mb-4 w-1/2 bg-white rounded-lg rounded-t-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700">
             <label htmlFor="user" className="sr-only">
@@ -57,7 +52,7 @@ export const AddComment = () => {
             </label>
             <input
               className="px-0 w-full text-base text-gray-900 border-0 focus:ring-0 focus:outline-none dark:text-white dark:placeholder-gray-400 dark:bg-gray-800"
-              placeholder="Tu nombre"
+              placeholder="Tu nombre *Opcional"
               type="text"
               ref={authorRef}
             />
