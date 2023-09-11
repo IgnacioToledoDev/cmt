@@ -3,7 +3,6 @@ import { addDoc, collection } from "firebase/firestore";
 import { firestore } from "../config/firebaseConfig";
 import { useRef, useState } from "react";
 import { Loading } from "./Loading";
-import { formValidator } from "../utils/formValidator";
 
 const handleComment = async (comment) => {
   const docRef = await addDoc(collection(firestore, "Comments"), comment);

@@ -14,35 +14,26 @@ export const AboutMe = () => {
         <footer>
           <div className="text-[17px] text-[#444]">
             <p className="py-3">
-              I’m the founder of Forte Labs, and the question that drives me is,
-              “
-              <span className="text-black font-bold">
-                How can humans reach their creative potential?
-              </span>
-              ”
+              Y amo ser terapeuta. Hace años estoy obsesionado con ayudar a
+              otros a cambiar a través de la conversación
             </p>{" "}
             <p className="py-3">
-              To answer that question, I teach and write about new ways for you
-              to thrive in our connected, digital world.
+              Veo la terapia como un lugar de confianza donde puedes rescatar y
+              organizar tus ideas más importantes y utilizarlas para beneficio
+              de tu pareja, tus hijos y tu familia.
             </p>
             <p className="py-3">
-              Over the last decade,{" "}
-              <span className="text-black font-bold">
-                {" "}
-                I’ve helped thousands of people build a Second Brain.
-              </span>
+              El fin de toda teripia radica en ayudarte a llevar una vida más
+              plena, simple y con menos estrés.
             </p>
             <p className="py-3">
-              It’s a trusted place outside your head where you can collect and
-              organize your most important ideas and insights, and use them to
-              do your best work.
+              Me gusta pensar que la solución está escondido en algún lugar
+              oscuro, y que la terapia será como una lintera con la que vamos
+              juntos a buscar esos tesoros ocultos.
             </p>
-            <p className="py-3">
-              The ultimate goal of building a Second Brain is to help you lead a
-              more fulfilling life with more ease and less stress.
-            </p>
+            <p className="py-3">¡Nos vemos en consulta!</p>
           </div>
-        </footer>
+        </footer>{" "}
       </div>
     </div>
   );
