@@ -52,7 +52,7 @@ export const AddComment = () => {
             </label>
             <input
               className="px-0 w-full text-base text-gray-900 border-0 focus:ring-0 focus:outline-none dark:text-white dark:placeholder-gray-400 dark:bg-gray-800"
-              placeholder="Tu nombre"
+              placeholder="Tu nombre *Opcional"
               type="text"
               ref={authorRef}
             />

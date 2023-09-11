@@ -5,7 +5,6 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Quiz } from "./pages/Quiz.jsx";
 import ErrorPage from "./pages/ErrorPage.jsx";
 import { Admin } from "./pages/Admin.jsx";
-import React from "react";
 import { Dashboard } from "./pages/Dashboard";
 import { Questions } from "./pages/Questions.jsx";
 
@@ -39,7 +38,7 @@ const router = createBrowserRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
+  <>
     <RouterProvider router={router} />
-  </React.StrictMode>
+  </>
 );

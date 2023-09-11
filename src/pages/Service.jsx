@@ -6,7 +6,7 @@ import {
 } from "@material-tailwind/react";
 
 // eslint-disable-next-line react/prop-types
-export const Service = ({ name, price }) => {
+export const Service = ({ name, priceCLP, priceUSD }) => {
   return (
     <div className="p-1 lg:m-1 xl:m-2 xl:p-2">
       <Card className="w-full max-w-xl lg:max-w-[42rem] flex-row p-12">
@@ -43,7 +43,14 @@ export const Service = ({ name, price }) => {
             variant="lead"
             size="lg"
           >
-            Precio: ${price}
+            Precio en CLP: ${priceCLP}
+          </Typography>
+          <Typography
+            className="block w-full lg:inline-block text-lg font-semibold"
+            variant="lead"
+            size="lg"
+          >
+            Precio en USD: ${priceUSD}
           </Typography>
         </CardBody>
       </Card>
