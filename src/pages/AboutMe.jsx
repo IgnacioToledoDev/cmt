@@ -33,7 +33,7 @@ export const AboutMe = () => {
             </p>
             <p className="py-3">¡Nos vemos en consulta!</p>
           </div>
-        </footer>
+        </footer>{" "}
       </div>
     </div>
   );
